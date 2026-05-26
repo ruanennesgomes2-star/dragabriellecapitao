@@ -20,7 +20,7 @@ const treatments = [
 
 export function Treatments() {
   return (
-    <section className="py-24 lg:py-32 bg-primary text-white relative border-t border-white/5 overflow-hidden">
+    <section className="py-24 lg:py-32 bg-primary text-white relative overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-20">
           <motion.h2 

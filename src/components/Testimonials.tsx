@@ -76,7 +76,7 @@ function ReviewCard({ review, index }: { key?: React.Key; review: any; index: nu
 
 export function Testimonials() {
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-t from-[#2d0910] via-primary to-[#3a0613] text-white relative overflow-hidden border-t border-white/5">
+    <section className="py-24 lg:py-32 bg-gradient-to-t from-[#2d0910] via-primary to-[#3a0613] text-white relative overflow-hidden">
       {/* Decorative glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#661828]/20 rounded-full blur-[150px] pointer-events-none"></div>
       

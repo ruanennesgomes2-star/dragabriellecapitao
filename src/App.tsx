@@ -17,13 +17,13 @@ export default function App() {
     <main className="min-h-screen bg-light text-[#1a1a1a] selection:bg-secondary/30 selection:text-primary">
       <Hero />
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent relative z-50" />
-      <Signs />
-      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent relative z-50" />
-      <Cases />
-      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent relative z-50" />
       <Treatments />
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent relative z-50" />
       <CasesGallery />
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent relative z-50" />
+      <Cases />
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent relative z-50" />
+      <Signs />
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent relative z-50" />
       <Authority />
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent relative z-50" />

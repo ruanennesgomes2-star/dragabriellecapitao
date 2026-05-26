@@ -2,7 +2,7 @@ import { Instagram, MapPin, Phone, Clock, FileText } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-[#1A0408] pt-12 md:pt-16 pb-8 text-white/60 border-t border-white/10">
+    <footer className="bg-[#1A0408] pt-12 md:pt-16 pb-8 text-white/60">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 md:gap-12 mb-12 md:mb-16 text-center md:text-left">
           <div className="col-span-1 md:col-span-2 flex justify-center md:justify-start">

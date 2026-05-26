@@ -14,7 +14,7 @@ export function Signs() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-tr from-primary via-[#3a0613] to-primary text-white overflow-hidden relative border-y border-white/5">
+    <section className="py-24 lg:py-32 bg-gradient-to-tr from-primary via-[#3a0613] to-primary text-white overflow-hidden relative">
       {/* Decorative Orbs */}
       <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[150px] pointer-events-none"></div>
 

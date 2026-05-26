@@ -22,7 +22,7 @@ const cases = [
 
 export function Cases() {
   return (
-    <section className="py-24 lg:py-32 bg-primary text-white relative overflow-hidden border-t border-white/5">
+    <section className="py-24 lg:py-32 bg-primary text-white relative overflow-hidden">
       <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-[#661828]/20 rounded-full blur-[120px] pointer-events-none -translate-y-1/2"></div>
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
