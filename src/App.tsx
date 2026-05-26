@@ -14,7 +14,7 @@ import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-light text-[#1a1a1a] selection:bg-secondary/30 selection:text-primary">
+    <main className="min-h-screen bg-primary text-white selection:bg-secondary/30 selection:text-white">
       <Hero />
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent relative z-50" />
       <Treatments />

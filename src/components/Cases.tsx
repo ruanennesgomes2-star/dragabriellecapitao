@@ -34,7 +34,7 @@ export function Cases() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.3 }}
               className="text-3xl md:text-4xl lg:text-5xl font-sans font-bold leading-tight mb-6"
             >
               Situações que <span className="text-secondary">tratamos com frequência</span> no consultório
@@ -43,7 +43,7 @@ export function Cases() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
               className="text-lg md:text-xl text-white/90 font-medium"
             >
               Muitos pacientes chegam até nós buscando recuperar a harmonia facial, a naturalidade do sorriso e a autoestima. <span className="font-bold text-white">Essas são algumas das queixas mais comuns:</span>
@@ -58,8 +58,8 @@ export function Cases() {
                   key={index}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true, margin: "0px" }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
                   className="bg-primary/50 backdrop-blur-sm border border-secondary/40 rounded-xl p-8 lg:p-10 shadow-lg group hover:border-secondary/70 transition-colors duration-300"
                 >
                   <h3 className="text-xl md:text-2xl font-sans font-bold text-secondary mb-3">

@@ -31,7 +31,7 @@ export function Procedures() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.3 }}
             className="text-4xl md:text-5xl font-serif mb-6 leading-tight"
           >
             Protocolos <span className="italic text-secondary">Premium</span>
@@ -40,7 +40,7 @@ export function Procedures() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
             className="text-white/80 text-lg font-light"
           >
             Nossas abordagens unem ciência, arte e tecnologia de ponta para proporcionar resultados incomparáveis.
@@ -56,7 +56,7 @@ export function Procedures() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
                 className="group p-10 bg-white/5 border border-white/10 hover:border-secondary/50 hover:bg-white/10 transition-all duration-500 relative overflow-hidden flex flex-col items-center text-center backdrop-blur-sm"
               >
                 {/* Subtle gradient glow on hover */}

@@ -13,8 +13,8 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-light);
-  color: #1a1a1a;
+  background-color: var(--color-primary);
+  color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

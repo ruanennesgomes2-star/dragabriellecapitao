@@ -26,7 +26,7 @@ export function Differentials() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-[#2d0910] text-white relative border-y border-white/5 overflow-hidden">
+    <section className="py-24 lg:py-32 bg-primary text-white relative border-y border-white/5 overflow-hidden">
       {/* Decorative Orbs */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-[150px] pointer-events-none"></div>
 
@@ -42,7 +42,7 @@ export function Differentials() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
                   className="p-8 bg-black/20 backdrop-blur-sm border border-white/5 hover:border-secondary/40 transition-all duration-700 shadow-xl shadow-black/20 group"
                 >
                   <Icon strokeWidth={1} className="w-10 h-10 text-secondary mb-6 group-hover:scale-110 transition-transform duration-500" />
@@ -60,7 +60,7 @@ export function Differentials() {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.4 }}
             >
               <h2 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
                 A Experiência <span className="italic text-secondary">Gabrielle Capitão</span>

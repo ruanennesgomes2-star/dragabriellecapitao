@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export function Authority() {
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-b from-[#3a0613] via-primary to-[#2d0910] text-white overflow-hidden relative">
+    <section className="py-24 lg:py-32 bg-primary text-white overflow-hidden relative">
       {/* Decorative Orbs */}
       <div className="absolute top-[20%] left-[-10%] w-[400px] h-[400px] bg-[#661828]/20 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[150px] pointer-events-none"></div>
@@ -16,7 +16,7 @@ export function Authority() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.3 }}
               className="text-3xl md:text-4xl lg:text-5xl font-sans font-bold leading-tight mb-8"
             >
               Quem é a <span className="text-secondary">Dra. Gabrielle Capitão?</span>
@@ -26,7 +26,7 @@ export function Authority() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
               className="space-y-6 text-white/80 font-light leading-relaxed text-base md:text-lg lg:text-xl"
             >
               <p>
@@ -50,7 +50,7 @@ export function Authority() {
               initial={{ opacity: 0, scale: 0.95, y: 30 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.4 }}
               className="relative z-10 w-full max-w-2xl lg:scale-110 lg:translate-x-4"
             >
               {/* Backlight / Depth glow */}
@@ -71,7 +71,7 @@ export function Authority() {
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0.6 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
                 className="absolute inset-0 flex flex-col items-center justify-end translate-y-6 md:translate-y-10 pointer-events-none z-30"
               >
                 <div 

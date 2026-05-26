@@ -27,7 +27,7 @@ export function Treatments() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.3 }}
             className="text-3xl md:text-4xl lg:text-5xl font-sans font-bold leading-tight mb-6"
           >
             Transformando sorrisos com <span className="text-secondary">equilíbrio, naturalidade e longevidade.</span>
@@ -36,7 +36,7 @@ export function Treatments() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
             className="text-white/90 font-medium text-base md:text-lg max-w-3xl mx-auto leading-relaxed"
           >
             Cada tratamento é planejado para preservar ao máximo a estrutura dental, aliando tecnologia, estética e funcionalidade.
@@ -50,7 +50,7 @@ export function Treatments() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.4 }}
               className={`bg-black/20 backdrop-blur-md rounded-[32px] p-8 md:p-10 lg:p-12 flex flex-col items-center gap-8 lg:gap-12 shadow-2xl border border-white/10 hover:border-secondary/30 transition-colors duration-500 relative overflow-hidden group ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>

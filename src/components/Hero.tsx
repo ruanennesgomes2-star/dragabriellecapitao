@@ -3,7 +3,7 @@ import { Leaf, Gem, User } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-tr from-[#2d0910] via-primary to-[#3a0613] text-white pt-4 pb-20 lg:pt-0 lg:pb-0">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-primary text-white pt-4 pb-20 lg:pt-0 lg:pb-0">
       {/* Elegant atmospheric glowing orbs */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[150px] mix-blend-screen pointer-events-none"></div>
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#661828]/30 rounded-full blur-[150px] mix-blend-screen pointer-events-none"></div>
@@ -17,8 +17,8 @@ export function Hero() {
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="relative z-10 text-5xl md:text-6xl lg:text-[76px] font-sans mb-6 mt-16 lg:mt-32 xl:mt-40 leading-[1.05] font-extrabold tracking-[-0.04em]"
+              transition={{ duration: 0.4, delay: 0.15 }}
+              className="relative z-10 text-5xl md:text-6xl lg:text-[76px] font-sans mb-6 mt-8 lg:mt-32 xl:mt-40 leading-[1.05] font-extrabold tracking-[-0.04em]"
             >
               O sorriso dos
               <br />
@@ -31,7 +31,7 @@ export function Hero() {
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
               className="text-lg md:text-[22px] text-white/95 mb-6 font-normal leading-snug max-w-xl"
             >
               Odontologia estética e especializada para transformar sua autoestima com naturalidade.
@@ -41,7 +41,7 @@ export function Hero() {
             <motion.div
               initial={{ opacity: 0, scaleX: 0 }}
               animate={{ opacity: 1, scaleX: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
               className="w-24 h-1 bg-gradient-to-r from-[#D39A4A] to-[#F3D599] rounded-full mb-6 origin-left"
             ></motion.div>
 
@@ -49,7 +49,7 @@ export function Hero() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
               className="text-[17px] text-white/80 italic font-serif mb-12 max-w-lg leading-relaxed"
             >
               Excelência em procedimentos odontológicos, atendimento humanizado.
@@ -59,7 +59,7 @@ export function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
               className="flex flex-col items-center lg:items-start gap-10 w-full"
             >
               <motion.a
@@ -97,14 +97,14 @@ export function Hero() {
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1.5, delay: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="relative lg:relative w-full lg:w-[120%] opacity-100 z-10 pointer-events-none flex items-end justify-center lg:justify-center h-[50vh] lg:h-[100vh] origin-bottom lg:-ml-12 order-1 lg:order-2 -mb-24 lg:mb-0 transform translate-y-12 lg:translate-y-0"
           >
             {/* Logo behind photo */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.2, delay: 0.2 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
               className="absolute top-[35%] lg:top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] md:w-[120%] lg:w-[130%] -z-20 pointer-events-none opacity-20"
             >
               <img 

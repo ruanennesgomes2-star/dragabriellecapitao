@@ -112,7 +112,7 @@ export function CasesGallery() {
   const filteredCases = mockCases.filter(c => c.categoryId === activeTab);
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-b from-primary via-[#450e18] to-primary text-white relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-primary text-white relative overflow-hidden">
       {/* Subtle glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[150px] pointer-events-none"></div>
 
@@ -123,7 +123,7 @@ export function CasesGallery() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.3 }}
             className="text-3xl md:text-4xl lg:text-5xl font-sans font-bold leading-tight"
           >
             Nossos <span className="text-secondary">Casos</span>

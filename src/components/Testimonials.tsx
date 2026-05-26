@@ -40,7 +40,7 @@ function ReviewCard({ review, index }: { key?: React.Key; review: any; index: nu
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.3, delay: index * 0.05 }}
       className="bg-white rounded-xl p-6 text-center shadow-[0_10px_40px_rgba(0,0,0,0.3)] border border-white/20 relative flex flex-col"
     >
       {/* Avatar overlapping top */}
@@ -76,7 +76,7 @@ function ReviewCard({ review, index }: { key?: React.Key; review: any; index: nu
 
 export function Testimonials() {
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-t from-[#2d0910] via-primary to-[#3a0613] text-white relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-primary text-white relative overflow-hidden">
       {/* Decorative glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#661828]/20 rounded-full blur-[150px] pointer-events-none"></div>
       
@@ -88,7 +88,7 @@ export function Testimonials() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-sans font-bold leading-tight mb-6"
           >
             <span className="text-secondary">Sorrisos que encantam</span> geram novas histórias
@@ -98,7 +98,7 @@ export function Testimonials() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
             className="text-white/80 font-medium text-sm md:text-base max-w-3xl leading-relaxed mb-8"
           >
             Mais de 75% dos nossos pacientes chegam até nós por indicação de familiares, amigos e pessoas que confiaram em nossos cuidados.

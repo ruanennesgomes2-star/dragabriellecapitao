@@ -14,7 +14,7 @@ export function Signs() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-tr from-primary via-[#3a0613] to-primary text-white overflow-hidden relative">
+    <section className="py-24 lg:py-32 bg-primary text-white overflow-hidden relative">
       {/* Decorative Orbs */}
       <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[150px] pointer-events-none"></div>
 
@@ -26,7 +26,7 @@ export function Signs() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="relative aspect-[4/3] rounded-2xl overflow-hidden group shadow-2xl"
           >
             {/* After Image (Background - Good teeth) */}
@@ -89,7 +89,7 @@ export function Signs() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="flex flex-col justify-center"
           >
             <h2 className="text-3xl lg:text-4xl font-sans font-bold mb-8 leading-tight">
