@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Check } from "lucide-react";
+import { Leaf, Gem, User } from "lucide-react";
 
 export function Hero() {
   return (
@@ -12,17 +12,17 @@ export function Hero() {
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-8 items-center h-full">
           
           {/* Left Content Area */}
-          <div className="relative flex flex-col justify-center items-center lg:items-start text-center lg:text-left max-w-2xl pt-4 lg:pt-0 z-20 order-2 lg:order-1 pb-16 lg:pb-0">
+          <div className="relative flex flex-col justify-center items-center lg:items-start text-center lg:text-left max-w-2xl pt-4 lg:pt-0 z-30 order-2 lg:order-1 pb-16 lg:pb-0">
             {/* Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="relative z-10 text-4xl md:text-5xl lg:text-[72px] font-sans mb-6 mt-16 lg:mt-32 xl:mt-40 leading-[1.05] font-[800] tracking-tight"
+              className="relative z-10 text-5xl md:text-6xl lg:text-[76px] font-sans mb-6 mt-16 lg:mt-32 xl:mt-40 leading-[1.05] font-extrabold tracking-[-0.04em]"
             >
               O sorriso dos
               <br />
-              <span className="text-secondary">seus sonhos</span>
+              <span className="text-[#E5B869]">seus sonhos</span>
               <br />
               começa aqui
             </motion.h1>
@@ -32,17 +32,25 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-lg md:text-xl text-white/90 mb-6 font-medium leading-relaxed max-w-xl"
+              className="text-lg md:text-[22px] text-white/95 mb-6 font-normal leading-snug max-w-xl"
             >
               Odontologia estética e especializada para transformar sua autoestima com naturalidade.
             </motion.p>
+
+            {/* Premium Gold Separator */}
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={{ opacity: 1, scaleX: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="w-24 h-1 bg-gradient-to-r from-[#D39A4A] to-[#F3D599] rounded-full mb-6 origin-left"
+            ></motion.div>
 
             {/* Sub-text (italicized) */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-base text-white/60 italic font-serif mb-10 max-w-lg"
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="text-[17px] text-white/80 italic font-serif mb-12 max-w-lg leading-relaxed"
             >
               Excelência em procedimentos odontológicos, atendimento humanizado.
             </motion.p>
@@ -51,8 +59,8 @@ export function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-col items-center lg:items-start gap-8 w-full"
+              transition={{ duration: 0.8, delay: 0.7 }}
+              className="flex flex-col items-center lg:items-start gap-10 w-full"
             >
               <motion.a
                 href="https://wa.me/5521971783571"
@@ -60,24 +68,26 @@ export function Hero() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold text-sm md:text-base px-8 md:px-12 py-4 md:py-5 rounded-lg shadow-[0_0_20px_rgba(170,105,73,0.4)] transition-all uppercase tracking-wider w-full sm:w-auto text-center"
+                className="inline-block bg-gradient-to-r from-[#C28C41] to-[#DCA457] hover:from-[#b07d38] hover:to-[#c9954d] text-white font-bold text-sm md:text-[15px] px-8 md:px-12 py-4 md:py-4 rounded-lg shadow-[0_4px_20px_rgba(194,140,65,0.4)] transition-all uppercase tracking-widest w-full sm:w-auto text-center"
               >
                 AGENDE SUA CONSULTA
               </motion.a>
               
               {/* Features list */}
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6 text-[10px] sm:text-[11px] font-bold text-white uppercase tracking-wider w-full">
-                <div className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-white" strokeWidth={3} />
-                  <span>Resultados naturais</span>
+              <div className="flex flex-row items-start justify-center lg:justify-start gap-8 sm:gap-12 text-[10px] sm:text-[11px] font-bold text-white uppercase tracking-[0.1em] w-full mt-2">
+                <div className="flex flex-col items-center gap-3 text-center">
+                  <Leaf className="w-[30px] h-[30px] text-[#E5B869]" strokeWidth={1.2} />
+                  <span>Resultados<br/>naturais</span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-white" strokeWidth={3} />
-                  <span>Técnicas exclusivas</span>
+                <div className="w-[1px] h-12 bg-gradient-to-b from-transparent via-[#E5B869]/40 to-transparent mt-1 hidden sm:block"></div>
+                <div className="flex flex-col items-center gap-3 text-center">
+                  <Gem className="w-[30px] h-[30px] text-[#E5B869]" strokeWidth={1.2} />
+                  <span>Técnicas<br/>exclusivas</span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-white" strokeWidth={3} />
-                  <span>Planejamento individualizado</span>
+                <div className="w-[1px] h-12 bg-gradient-to-b from-transparent via-[#E5B869]/40 to-transparent mt-1 hidden sm:block"></div>
+                <div className="flex flex-col items-center gap-3 text-center">
+                  <User className="w-[30px] h-[30px] text-[#E5B869]" strokeWidth={1.2} />
+                  <span>Planejamento<br/>individualizado</span>
                 </div>
               </div>
             </motion.div>
@@ -109,7 +119,7 @@ export function Hero() {
 
             {/* We use a professional female portrait cut out or blending reasonably well */}
             <img
-              src="/gabifotodois.PNG"
+              src="/gabifoto.png"
               alt="Dra. Gabrielle Capitão"
               className="w-full h-full lg:h-[95vh] object-contain object-bottom"
               style={{
