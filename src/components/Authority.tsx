@@ -61,8 +61,8 @@ export function Authority() {
                 alt="Dra. Gabrielle Capitão"
                 className="w-full h-auto object-contain"
                 style={{
-                  WebkitMaskImage: "linear-gradient(to top, transparent 0%, transparent 10%, black 30%, black 100%)",
-                  maskImage: "linear-gradient(to top, transparent 0%, transparent 10%, black 30%, black 100%)",
+                  WebkitMaskImage: "linear-gradient(to top, transparent 0%, transparent 20%, black 45%, black 100%)",
+                  maskImage: "linear-gradient(to top, transparent 0%, transparent 20%, black 45%, black 100%)",
                   filter: "drop-shadow(0px -4px 12px rgba(211, 154, 74, 0.15)) drop-shadow(0px 0px 20px rgba(84, 19, 32, 0.4)) drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.15)) brightness(0.94) contrast(1.1) saturate(1.1) sepia(0.08)"
                 }}
               />
