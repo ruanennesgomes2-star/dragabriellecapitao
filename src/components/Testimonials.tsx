@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "motion/react";
 import { Star, CheckCircle, ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -47,7 +47,7 @@ function ReviewCard({ review, index }: { key?: React.Key; review: any; index: nu
       <div className="absolute -top-10 left-1/2 transform -translate-x-1/2">
         <div className={`w-20 h-20 rounded-full border-[6px] border-white overflow-hidden shadow-sm flex items-center justify-center text-white text-2xl font-bold ${review.color || 'bg-gray-200'}`}>
           {review.image ? (
-            <img src={review.image} alt={review.name} className="w-full h-full object-cover" />
+            <img loading="lazy" decoding="async" src={review.image} alt={review.name} className="w-full h-full object-cover" />
           ) : (
             review.initial
           )}

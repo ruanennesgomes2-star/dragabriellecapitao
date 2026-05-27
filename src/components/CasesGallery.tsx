@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronsLeftRight } from "lucide-react";
 
@@ -26,28 +26,28 @@ const categories: Category[] = [
 
 const mockCases: Case[] = [
   // Facetas
-  { id: 1, categoryId: "facetas", beforeImg: "https://images.unsplash.com/photo-1544626053-8985dc34ae63?q=80&w=800&auto=format&fit=crop", afterImg: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop" },
-  { id: 2, categoryId: "facetas", beforeImg: "https://images.unsplash.com/photo-1494607239400-ff147dda4809?q=80&w=800&auto=format&fit=crop", afterImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" },
+  { id: 1, categoryId: "facetas", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
+  { id: 2, categoryId: "facetas", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
   
   // Coroas
-  { id: 3, categoryId: "coroas", beforeImg: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=800&auto=format&fit=crop", afterImg: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop" },
+  { id: 3, categoryId: "coroas", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
   
   // Lentes
-  { id: 4, categoryId: "lentes", beforeImg: "https://images.unsplash.com/photo-1544626053-8985dc34ae63?q=80&w=800&auto=format&fit=crop", afterImg: "https://images.unsplash.com/photo-1598256989800-ef662ee2743a?q=80&w=800&auto=format&fit=crop" },
-  { id: 5, categoryId: "lentes", beforeImg: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=800&auto=format&fit=crop", afterImg: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop" },
+  { id: 4, categoryId: "lentes", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
+  { id: 5, categoryId: "lentes", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
   
   // Protocolo
-  { id: 6, categoryId: "protocolo", beforeImg: "https://images.unsplash.com/photo-1494607239400-ff147dda4809?q=80&w=800&auto=format&fit=crop", afterImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" },
+  { id: 6, categoryId: "protocolo", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
   
   // Restauros
-  { id: 7, categoryId: "restauros", beforeImg: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=800&auto=format&fit=crop", afterImg: "https://images.unsplash.com/photo-1598256989800-ef662ee2743a?q=80&w=800&auto=format&fit=crop" },
+  { id: 7, categoryId: "restauros", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
   
   // Coroa sobre Implante
-  { id: 8, categoryId: "coroa_implante", beforeImg: "https://images.unsplash.com/photo-1544626053-8985dc34ae63?q=80&w=800&auto=format&fit=crop", afterImg: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop" },
-  { id: 9, categoryId: "coroa_implante", beforeImg: "https://images.unsplash.com/photo-1494607239400-ff147dda4809?q=80&w=800&auto=format&fit=crop", afterImg: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop" },
+  { id: 8, categoryId: "coroa_implante", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
+  { id: 9, categoryId: "coroa_implante", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
   
   // Lentes Resina
-  { id: 10, categoryId: "lentes_resina", beforeImg: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=800&auto=format&fit=crop", afterImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" },
+  { id: 10, categoryId: "lentes_resina", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
 ];
 
 function BeforeAfterSlider({ caseData }: { key?: React.Key; caseData: Case }) {
@@ -56,7 +56,7 @@ function BeforeAfterSlider({ caseData }: { key?: React.Key; caseData: Case }) {
   return (
     <div className="relative aspect-[4/3] md:aspect-[3/2] rounded-xl overflow-hidden shadow-2xl border border-secondary/20">
       {/* After Image (Background) */}
-      <img
+      <img loading="lazy" decoding="async"
         src={caseData.afterImg}
         alt="Depois do procedimento"
         className="absolute inset-0 w-full h-full object-cover"
@@ -67,7 +67,7 @@ function BeforeAfterSlider({ caseData }: { key?: React.Key; caseData: Case }) {
         className="absolute inset-0 w-full h-full overflow-hidden"
         style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
       >
-        <img
+        <img loading="lazy" decoding="async"
           src={caseData.beforeImg}
           alt="Antes do procedimento"
           className="absolute inset-0 w-full h-full object-cover"
@@ -99,7 +99,7 @@ function BeforeAfterSlider({ caseData }: { key?: React.Key; caseData: Case }) {
       <div className="absolute bottom-4 left-4 bg-secondary text-white text-[10px] md:text-xs font-bold px-4 py-1.5 rounded-full pointer-events-none shadow-md uppercase tracking-wider z-20">
         Antes
       </div>
-      <div className="absolute bottom-4 right-4 bg-secondary text-white text-[10px] md:text-xs font-bold px-4 py-1.5 rounded-full pointer-events-none shadow-md uppercase tracking-wider z-20">
+      <div className="absolute bottom-4 right-4 bg-primary/90 backdrop-blur-sm text-secondary border border-secondary/40 text-[10px] md:text-xs font-bold px-4 py-1.5 rounded-full pointer-events-none shadow-md uppercase tracking-wider z-20">
         Depois
       </div>
     </div>

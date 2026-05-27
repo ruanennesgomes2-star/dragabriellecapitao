@@ -9,12 +9,12 @@ const treatments = [
   {
     title: "Lentes de Contato Dental em Porcelana",
     description: "Fragmentos cerâmicos ultrafinos projetados para corrigir cor, formato e alinhamento dos dentes com máxima durabilidade e brilho natural.",
-    image: "https://images.unsplash.com/photo-1598256989800-ef662ee2743a?q=80&w=1000&auto=format&fit=crop", 
+    image: "/lentes.PNG", 
   },
   {
     title: "Implantes Dentários com Carga Imediata",
     description: "Solução definitiva para perda dental, reestabelecendo a mastigação e estética com raízes artificiais de titânio e coroas de porcelana.",
-    image: "https://plus.unsplash.com/premium_photo-1664303350993-9c5950897c8d?q=80&w=1000&auto=format&fit=crop", 
+    image: "/implante.PNG", 
   }
 ];
 
@@ -64,7 +64,7 @@ export function Treatments() {
                 </p>
               </div>
               <div className="flex-1 w-full relative h-[250px] md:h-[350px] rounded-2xl overflow-hidden shadow-2xl">
-                <img
+                <img loading="lazy" decoding="async"
                   src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover"

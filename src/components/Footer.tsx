@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 md:gap-12 mb-12 md:mb-16 text-center md:text-left">
           <div className="col-span-1 md:col-span-2 flex justify-center md:justify-start">
-            <img src="/logogabi.PNG" alt="Dra. Gabrielle Capitão Logo" className="h-40 md:h-64 lg:h-80 w-auto object-contain -mt-4 md:mt-0 mb-0 md:mb-4 transform translate-x-0 md:translate-x-6" />
+            <img loading="lazy" decoding="async" src="/logogabi.PNG" alt="Dra. Gabrielle Capitão Logo" className="h-40 md:h-64 lg:h-80 w-auto object-contain -mt-4 md:mt-0 mb-0 md:mb-4 transform translate-x-0 md:translate-x-6" />
           </div>
           
           <div className="flex flex-col items-center md:items-start">

@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import { useRef } from "react";
 
 const cases = [
   {

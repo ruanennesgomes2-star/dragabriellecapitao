@@ -30,8 +30,8 @@ export function Signs() {
             className="relative aspect-[4/3] rounded-2xl overflow-hidden group shadow-2xl"
           >
             {/* After Image (Background - Good teeth) */}
-            <img
-              src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1000&auto=format&fit=crop"
+            <img loading="lazy" decoding="async"
+              src="/depoisone.png"
               alt="Depois - Sorriso Perfeito"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -41,8 +41,8 @@ export function Signs() {
               className="absolute inset-0 w-full h-full overflow-hidden"
               style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
-              <img
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop"
+              <img loading="lazy" decoding="async"
+                src="/antesone.png"
                 alt="Antes"
                 className="absolute inset-0 w-full h-full object-cover"
               />

@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { Hero } from "./components/Hero";
 import { Signs } from "./components/Signs";
 import { Cases } from "./components/Cases";

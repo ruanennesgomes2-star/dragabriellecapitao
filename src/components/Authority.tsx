@@ -56,7 +56,7 @@ export function Authority() {
               {/* Backlight / Depth glow */}
               <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[75%] h-[75%] bg-secondary/10 rounded-full blur-[80px] -z-10 mix-blend-screen pointer-events-none"></div>
 
-              <img
+              <img loading="lazy" decoding="async"
                 src="/gabiphotoum.PNG"
                 alt="Dra. Gabrielle Capitão"
                 className="w-full h-auto object-contain"
