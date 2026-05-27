@@ -3,7 +3,7 @@ import { Leaf, Gem, User } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-primary text-white pt-4 pb-20 lg:pt-0 lg:pb-0">
+    <section className="relative min-h-screen flex items-center overflow-hidden text-white bg-transparent pt-4 pb-20 lg:pt-0 lg:pb-0">
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[150px] mix-blend-screen pointer-events-none"></div>
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#661828]/30 rounded-full blur-[150px] mix-blend-screen pointer-events-none"></div>
 

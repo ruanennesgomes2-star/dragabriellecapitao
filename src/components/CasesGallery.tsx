@@ -112,7 +112,7 @@ export function CasesGallery() {
   const filteredCases = mockCases.filter(c => c.categoryId === activeTab);
 
   return (
-    <section className="py-24 lg:py-32 bg-primary text-white relative overflow-hidden">
+    <section className="py-24 lg:py-32 text-white bg-transparent relative overflow-hidden">
       {/* Subtle glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[150px] pointer-events-none"></div>
 

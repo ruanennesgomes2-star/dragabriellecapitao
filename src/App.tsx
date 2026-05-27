@@ -7,9 +7,12 @@ import { CasesGallery } from "./components/CasesGallery";
 import { Testimonials } from "./components/Testimonials";
 import { Footer } from "./components/Footer";
 
+import { AnimatedBackground } from "./components/AnimatedBackground";
+
 export default function App() {
   return (
-    <main className="min-h-screen bg-primary text-white selection:bg-secondary/30 selection:text-white">
+    <main className="min-h-screen text-white selection:bg-secondary/30 selection:text-white relative">
+      <AnimatedBackground />
       <Hero />
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent relative z-50" />
       <Treatments />

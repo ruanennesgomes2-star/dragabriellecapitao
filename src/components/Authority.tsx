@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export function Authority() {
   return (
-    <section className="py-24 lg:py-32 bg-primary text-white overflow-hidden relative">
+    <section className="py-24 lg:py-32 text-white bg-transparent overflow-hidden relative">
       {/* Decorative Orbs */}
       <div className="absolute top-[20%] left-[-10%] w-[400px] h-[400px] bg-[#661828]/20 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[150px] pointer-events-none"></div>

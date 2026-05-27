@@ -76,7 +76,7 @@ function ReviewCard({ review, index }: { review: any; index: number; key?: strin
 
 export function Testimonials() {
   return (
-    <section className="py-24 lg:py-32 bg-primary text-white relative overflow-hidden">
+    <section className="py-24 lg:py-32 text-white bg-transparent relative overflow-hidden">
       {/* Decorative glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#661828]/20 rounded-full blur-[150px] pointer-events-none"></div>
       
