@@ -31,7 +31,7 @@ const reviews = [
   }
 ];
 
-function ReviewCard({ review, index }: { key?: React.Key; review: any; index: number }) {
+function ReviewCard({ review, index }: { review: any; index: number }) {
   const [expanded, setExpanded] = useState(false);
   const isLong = review.text.length > 130;
 

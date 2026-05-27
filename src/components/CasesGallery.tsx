@@ -50,7 +50,7 @@ const mockCases: Case[] = [
   { id: 10, categoryId: "lentes_resina", beforeImg: "/antesone.png", afterImg: "/depoisone.png" },
 ];
 
-function BeforeAfterSlider({ caseData }: { key?: React.Key; caseData: Case }) {
+function BeforeAfterSlider({ caseData }: { caseData: Case }) {
   const [sliderPosition, setSliderPosition] = useState(50);
 
   return (
