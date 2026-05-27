@@ -61,31 +61,35 @@ export function Authority() {
                 alt="Dra. Gabrielle Capitão"
                 className="w-full h-auto object-contain"
                 style={{
-                  WebkitMaskImage: "linear-gradient(to top, transparent 0%, black 15%, black 100%)",
-                  maskImage: "linear-gradient(to top, transparent 0%, black 15%, black 100%)",
+                  WebkitMaskImage: "linear-gradient(to top, transparent 0%, transparent 10%, black 30%, black 100%)",
+                  maskImage: "linear-gradient(to top, transparent 0%, transparent 10%, black 30%, black 100%)",
                   filter: "drop-shadow(0px -4px 12px rgba(211, 154, 74, 0.15)) drop-shadow(0px 0px 20px rgba(84, 19, 32, 0.4)) drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.15)) brightness(0.94) contrast(1.1) saturate(1.1) sepia(0.08)"
                 }}
               />
               
               <motion.div 
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: 0.3 }}
                 className="absolute inset-0 flex flex-col items-center justify-end translate-y-6 md:translate-y-10 pointer-events-none z-30"
               >
-                <div 
-                  className="font-signature font-bold text-7xl md:text-[6rem] lg:text-[8rem] tracking-wide text-[#D39A4A] leading-none transform -rotate-2 -ml-4 md:-ml-8 lg:-ml-12 mb-2 md:mb-4 lg:mb-6"
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.8, x: -20, rotate: -8 }}
+                  whileInView={{ opacity: 1, scale: 1, x: 0, rotate: -2 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.8, type: "spring", bounce: 0.4, delay: 0.4 }}
+                  className="font-signature font-bold text-7xl md:text-[6rem] lg:text-[8rem] tracking-wide text-[#D39A4A] leading-none -ml-4 md:-ml-8 lg:-ml-12 mb-2 md:mb-4 lg:mb-6"
                   style={{ textShadow: "0px 2px 10px rgba(0,0,0,0.3)" }}
                 >
                   Gabrielle
-                </div>
-                <div 
-                  className="font-signature font-bold text-6xl md:text-[5rem] lg:text-[7rem] tracking-wide text-[#D39A4A] leading-none -ml-2 md:-ml-4 lg:-ml-8 transform -rotate-2 mt-0 md:-mt-1 lg:-mt-2"
+                </motion.div>
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.8, x: 20, rotate: 5 }}
+                  whileInView={{ opacity: 1, scale: 1, x: 0, rotate: -2 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.8, type: "spring", bounce: 0.4, delay: 0.6 }}
+                  className="font-signature font-bold text-6xl md:text-[5rem] lg:text-[7rem] tracking-wide text-[#D39A4A] leading-none -ml-2 md:-ml-4 lg:-ml-8 mt-0 md:-mt-1 lg:-mt-2"
                   style={{ textShadow: "0px 2px 10px rgba(0,0,0,0.3)" }}
                 >
                   Capitão
-                </div>
+                </motion.div>
               </motion.div>
             </motion.div>
           </div>
