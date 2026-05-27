@@ -33,3 +33,7 @@ html {
   will-change: transform;
   transform: translateZ(0); /* Hardware acceleration */
 }
+
+@keyframes shimmer {
+  100% { transform: translateX(200%); }
+}
