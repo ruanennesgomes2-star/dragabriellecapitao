@@ -51,7 +51,7 @@ export function Authority() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4 }}
-              className="relative z-10 w-full max-w-2xl lg:scale-110 lg:translate-x-4"
+              className="relative z-10 w-full max-w-2xl scale-110 lg:scale-125 lg:translate-x-4"
             >
               {/* Backlight / Depth glow */}
               <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[75%] h-[75%] bg-secondary/10 rounded-full blur-[80px] -z-10 mix-blend-screen pointer-events-none"></div>
